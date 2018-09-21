@@ -1,0 +1,22 @@
+##note: use 'set()' to delete duplicate element, example:
+'''input:
+7
+UK
+China
+USA
+France
+New Zealand
+UK
+France 
+'''
+#code:
+print(len(set([str(input()).upper() for x in range(int(input()))])))
+
+#print(len(set([str(input()) for x in range(int(input()))])))
+## note:'''this may have 'Uk' not the same as 'UK', use " input(). " to ignore upper or lower case. '''
+
+#print(set([str(input()).upper() for x in range(int(input()))])) 
+'''this print out: {'UK', 'USA', 'New Zealand', 'China', 'France'}'''
+
+#print([str(input()) for x in range(int(input()))]) 
+~~~ this print out: ['UK', 'China', 'USA', 'France', 'New Zealand', 'UK', 'France']
