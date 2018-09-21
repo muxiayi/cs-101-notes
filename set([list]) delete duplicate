@@ -17,6 +17,7 @@ print(len(set([str(input()).upper() for x in range(int(input()))])))
 
 #print(set([str(input()).upper() for x in range(int(input()))])) 
 '''this print out: {'UK', 'USA', 'New Zealand', 'China', 'France'}'''
+### then use "list" to make it a list again: list(set([str(input()).upper() for x in range(int(input()))])) 
 
 #print([str(input()) for x in range(int(input()))]) 
 ~~~ this print out: ['UK', 'China', 'USA', 'France', 'New Zealand', 'UK', 'France']
